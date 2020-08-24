@@ -1,0 +1,42 @@
+<div class="box">
+			<ls-button :value="zhi" type="normal"></ls-button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<ls-button :value="zhi" type="danger"></ls-button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<ls-button :value="zhi" type="succeed"></ls-button><br /><br />
+			<ls-button :value="zhi" type="normal" hollow></ls-button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<ls-button :value="zhi" type="danger" hollow></ls-button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<ls-button :value="zhi" type="succeed" hollow></ls-button><br /><br />
+			<ls-button :value="zhi" type="normal" pill></ls-button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<ls-button :value="zhi" type="danger" pill></ls-button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<ls-button :value="zhi" type="succeed" pill></ls-button><br /><br />
+			<ls-button :value="zhi" type="normal" circle></ls-button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<ls-button :value="zhi" type="danger" circle></ls-button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<ls-button :value="zhi" type="succeed" circle></ls-button><br /><br />
+			<ls-button-group value1="登录" value2="注册"></ls-button-group>
+		</div>
+		<div class="box">
+			<ls-input placeholder="请输入值" type="text" cls="pill"></ls-input><br /><br />
+			<ls-input placeholder="请输入密码" type="password"></ls-input><br /><br />
+			<ls-input placeholder="禁止输入" type="password" disabled="true"></ls-input><br /><br />
+		</div>
+		<div class="box">
+			<ls-seal value="拆" color="#de1c31" circle></ls-seal><br /><br />
+			<ls-seal value="拆" color="#000000"></ls-seal>
+		</div>
+		<div class="box">
+			<ls-navigation>
+				<li :class="[isActive == 1 ? 'active' : '']" @click="isActive = 1"><span class="iconfont icon-tubiaozhengli810_huaban1"></span></li>
+				<li :class="[isActive == 2 ? 'active' : '']" @click="isActive = 2"><span class="iconfont icon-tubiaozhengli810-08"></span></li>
+				<li :class="[isActive == 3 ? 'active' : '']" @click="isActive = 3"><span class="iconfont icon-tubiaozhengli810-09"></span></li>
+				<li :class="[isActive == 4 ? 'active' : '']" @click="isActive = 4"><span class="iconfont icon-tubiaozhengli810-13"></span></li>
+				<li :class="[isActive == 5 ? 'active' : '']" @click="isActive = 5"><span class="iconfont icon-tubiaozhengli810-19"></span></li>
+				<li :class="[isActive == 6 ? 'active' : '']" @click="isActive = 6"><span class="iconfont icon-tubiaozhengli810-03"></span></li>
+			</ls-navigation>
+		</div>
+		<div class="box">
+			<ls-suspend>
+				<h1>世界</h1>
+			</ls-suspend>
+		</div>
+		<div class="box">
+			<ls-img-result :path="src"></ls-img-result>
+		</div>
